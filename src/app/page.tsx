@@ -5,7 +5,7 @@ import BannerSlider from './components/BannerSlider';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import List from './components/List';
-import { useEffect, useRef } from 'react';
+import { useEffect } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 
 
