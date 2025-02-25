@@ -30,8 +30,8 @@ export default function Home() {
     <div>
       <Header></Header>
       <main className='relative'>
-        <div className='h-screen sticky top-0 z-0'>
-          <motion.div style={{opacity}} className='h-full bg-black w-full absolute top-0 left-0 z-20'>
+        <div className='h-screen w-full sticky top-0 z-0'>
+          <motion.div style={{opacity}} className='h-full bg-black w-full absolute top-0 left-0 z-30'>
           </motion.div>
           <BannerSlider></BannerSlider>
         </div>

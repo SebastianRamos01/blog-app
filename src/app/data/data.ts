@@ -4,7 +4,7 @@ export const posts = [
         header: 'This is a very strange couch and a weird hotel',
         category: ['Travel', 'Photograpy'],
         image: 'pexels-daniel-ape-795693.jpg',
-        featured: false,
+        featured: true,
         createdAt: '2021-01-01',
     },
     {
@@ -12,7 +12,7 @@ export const posts = [
         header: 'Click anywhere in the paragraph or heading text and start typing.',
         category: ['Travel', 'Photograpy', 'Art'],
         image: 'pexels-fr3nks-287229.jpg',
-        featured: true,
+        featured: false,
         createdAt: '2021-01-22',
     },
     {
@@ -20,7 +20,7 @@ export const posts = [
         header: 'A minimalistic paint in the floor for now',
         category: ['Photograpy'],
         image: 'pexels-francesco-ungaro-2325447.jpg',
-        featured: false,
+        featured: true,
         createdAt: '2022-01-01',
     },
     {
@@ -36,7 +36,7 @@ export const posts = [
         header: 'This is the Big Ben from London and a big watch tower',
         category: ['Travel', 'Photograpy'],
         image: 'pexels-pixabay-161154.jpg',
-        featured: false,
+        featured: true,
         createdAt: '2022-01-01',
     },
     {

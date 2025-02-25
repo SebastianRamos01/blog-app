@@ -2,11 +2,12 @@
 
 import React from 'react'
 import { posts } from '../data/data'
+import Image from 'next/image';
 
 export default function List() {
 
     //Last on top
-    const postReverse = posts.reverse()
+    const reversedPosts = [...posts].reverse();
 
   return (
     <section className='bg-white'>
@@ -24,7 +25,7 @@ export default function List() {
             </div>
         </div>
         <ul className='flex flex-col md:flex-row flex-wrap md:justify-between md:gap-0'>
-            {postReverse.map((post) => (
+            {reversedPosts.map((post) => (
                 <li key={post.id} className='w-full font-medium text-lg relative md:w-[32.5%] border-b flex flex-col my-2'>
                     <div className='absolute top-0 left-0 text-white text-xs flex justify-between w-full p-3 z-10'>
                         <ul className='flex gap-2'>
@@ -34,8 +35,15 @@ export default function List() {
                         </ul>
                         <div>{post.createdAt}</div>
                     </div>
-                    <div className='w-full h-[16em] overflow-hidden cursor-pointer rounded-t'>
-                        <img src={`/${post.image}`} alt='image-post' className='object-cover w-full h-full hover:scale-105 duration-150'/>
+                    <div className='w-full h-[16em] overflow-hidden cursor-pointer rounded-t relative'>
+                        {/* <img src={`/${post.image}`} alt='image-post' className='object-cover w-full h-full hover:scale-105 duration-150'/> */}
+                        <Image
+                            src={`/${post.image}`}
+                            alt='image-post'
+                            width={500}
+                            height={500}
+                            className='hover:scale-105 duration-150 h-full'
+                            />
                     </div>
                     <div className='my-2 leading-5 font-semibold text-base w-11/12'>
                         {post.header}
