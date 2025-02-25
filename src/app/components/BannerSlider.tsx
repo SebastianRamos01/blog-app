@@ -5,7 +5,7 @@ import { posts } from "../data/data";
 import Button from "./Button";
 import { motion } from "framer-motion";
 
-const featuredPosts = posts.filter((post: any) => post.featured); //Filter by Featured
+const featuredPosts = posts.filter((post) => post.featured); //Filter by Featured
 
 export default function BannerSlider() {
   
